@@ -1,4 +1,4 @@
-import React, {Fragment} from 'react'
+import React from 'react'
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 import './layout.css'
