@@ -1,0 +1,6 @@
+[build]
+base = "
+backroads/"
+publish = "
+backroads/build/"
+command = "gatsby build"
