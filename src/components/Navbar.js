@@ -4,7 +4,9 @@ import {FaAlignRight} from "react-icons/fa"
 import links from '../constants/links'
 import socialIcons from '../constants/social-icons'
 import logo from '../images/logo.svg'
-import {Link} from 'gatsby'
+//import {Link} from 'gatsby'
+import AniLink from "gatsby-plugin-transition-link/AniLink";
+
 
 
 const Navbar = () => {
@@ -34,7 +36,7 @@ const Navbar = () => {
                 {links.map((item, index) => (
                 
                   <li key={index}>
-                    <Link to={item.path}>{item.text}</Link>
+                    <AniLink to={item.path}>{item.text}</AniLink>
                   </li>
                   
                 ))}
