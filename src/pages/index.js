@@ -7,7 +7,7 @@ import About from '../components/Home/About'
 import Services from '../components/Home/Services'
 import {graphql} from 'gatsby'
 import AniLink from "gatsby-plugin-transition-link/AniLink";
-
+import FeaturedTours from '../components/Home/FeaturedTours'
 
 
 export default ({data}) => {
@@ -30,7 +30,7 @@ export default ({data}) => {
 
       <About/>
       <Services/>
-     
+     <FeaturedTours/>
        </Layout>
     
    ) 
