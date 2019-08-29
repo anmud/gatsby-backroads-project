@@ -36,7 +36,7 @@ const Navbar = () => {
                 {links.map((item, index) => (
                 
                   <li key={index}>
-                    <AniLink to={item.path}>{item.text}</AniLink>
+                    <AniLink fade to={item.path}>{item.text}</AniLink>
                   </li>
                   
                 ))}

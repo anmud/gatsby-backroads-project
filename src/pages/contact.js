@@ -2,6 +2,7 @@ import React from 'react'
 import Layout from '../components/Layout'
 import StyledHero from '../components/StyledHero'
 import {graphql} from 'gatsby'
+import ContactComponent from '../components/Contact/Contact'
 
 const Contact = ({data}) => {
 
@@ -10,8 +11,8 @@ const Contact = ({data}) => {
   return (
       <Layout>
         <StyledHero image={image}>
-        <p>My Contact page</p>
         </StyledHero>
+        <ContactComponent/>
       </Layout>
   )
 }

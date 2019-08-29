@@ -8,7 +8,7 @@ import {graphql} from 'gatsby'
 
 const Tours = ({data}) => {
 
-    const image = data.connectBcg.childImageSharp.fluid
+    const image = data.defaultBcg.childImageSharp.fluid
 
     return (
         <Layout>
@@ -28,7 +28,7 @@ export default Tours;
 
 export const query = graphql`
 query{
-  connectBcg: file(relativePath: {eq:"connectBcg.jpeg"}){
+  defaultBcg: file(relativePath: {eq:"defaultBcg.jpeg"}){
     childImageSharp{
       fluid(maxWidth:4160, quality: 90){
         ...GatsbyImageSharpFluid_withWebp
