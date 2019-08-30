@@ -4,6 +4,7 @@ import Layout from '../components/Layout'
 import RegularHeader from '../examples/RegularHeader'
 import StyledHero from '../components/StyledHero'
 import {graphql} from 'gatsby'
+import ToursComponent from '../components/Tour/Tours'
 
 
 const Tours = ({data}) => {
@@ -13,13 +14,13 @@ const Tours = ({data}) => {
     return (
         <Layout>
             <StyledHero image={image}>
-            <p>hello from tours</p>
+            
 
-           <RegularHeader/>
+           {/* <RegularHeader/> */}
 
            {/* <Header/> */}
             </StyledHero>
-           
+            <ToursComponent/>
         </Layout>
     )
 }
