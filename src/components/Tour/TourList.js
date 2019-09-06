@@ -20,7 +20,7 @@ componentDidMount(){
 
     render(){
         return(
-            <section classNme={styles.tours}>
+            <section className={styles.tours}>
                 <Title title="our" subtitle="tours"/>
                 <div className={styles.center}>
                  {
