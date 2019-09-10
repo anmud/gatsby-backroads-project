@@ -2,6 +2,7 @@ import React from 'react'
 import Layout from '../components/Layout'
 import StyledHero from '../components/StyledHero'
 import {graphql} from 'gatsby'
+import BlogList from '../components/Blog/BlogList'
 
 const Blog = ({data}) => {
 
@@ -10,8 +11,8 @@ const Blog = ({data}) => {
   return (
       <Layout>
         <StyledHero image={image}>
-        <p>My Blog</p>
         </StyledHero>
+        <BlogList/>
       </Layout>
   )
 }
