@@ -7,7 +7,9 @@ module.exports = {
     title: "Backroads",
     description: "Explore awesome worldwide tours and discover what makes each of them unique. Forget your daily routine & say yes to adventure",
     author: '@anmud',
-  
+    twitterUserName: '@anmud',
+    image: '/defaultBcg.jpeg',
+    siteUrl: 'https://nostalgic-stonebraker-aeaf96.netlify.com'
   },
   plugins: [
     {
@@ -30,5 +32,6 @@ module.exports = {
       },
     },
     `gatsby-plugin-playground`,
+    `gatsby-plugin-react-helmet`,
   ],
 }
