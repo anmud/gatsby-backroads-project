@@ -6,7 +6,7 @@ import styles from '../../css/contact.module.css'
 
 const Contact = () => {
    return (
-      <section classNme={styles.contact}>
+      <section className={styles.contact}>
           <Title title="contact" subtitle="us"/>
           <div className={styles.center}>
             <form 
