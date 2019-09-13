@@ -5,6 +5,7 @@ import RegularHeader from '../examples/RegularHeader'
 import StyledHero from '../components/StyledHero'
 import {graphql} from 'gatsby'
 import ToursComponent from '../components/Tour/Tours'
+import SEO from '../components/SEO'
 
 
 const Tours = ({data}) => {
@@ -13,6 +14,7 @@ const Tours = ({data}) => {
 
     return (
         <Layout>
+          <SEO title='Tours'/>
             <StyledHero image={image}>
             
 

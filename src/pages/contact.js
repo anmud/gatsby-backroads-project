@@ -3,6 +3,7 @@ import Layout from '../components/Layout'
 import StyledHero from '../components/StyledHero'
 import {graphql} from 'gatsby'
 import ContactComponent from '../components/Contact/Contact'
+import SEO from '../components/SEO'
 
 const Contact = ({data}) => {
 
@@ -10,6 +11,7 @@ const Contact = ({data}) => {
 
   return (
       <Layout>
+        <SEO title='Contact'/>
         <StyledHero image={image}>
         </StyledHero>
         <ContactComponent/>
