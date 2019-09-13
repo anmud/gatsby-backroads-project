@@ -10,7 +10,7 @@ const getData = graphql`
         siteDesc: description
         author
         siteUrl
-        image
+        defaultImage: image
         twitterUsername
       }
     }
@@ -24,20 +24,20 @@ const SEO = ({ title, description }) => {
     siteDesc,
     siteTitle,
     siteUrl,
-    image,
+    defaultImage,
     twitterUsername,
   } = site.siteMetadata
 
   return (
     <Helmet htmlAttributes={{ lang: "en" }} title={`${title} | ${siteTitle}`}>
       <meta name="description" content={description || siteDesc} />
-      <meta name="image" content={image} />
+      <meta name="image" content={defaultImage} />
       {/* facebook card */}
       <meta property='og:url' content={siteUrl}/>
       <meta property='og:type' content='website'/>
       <meta property='og:title' content={siteTitle}/>
       <meta property='og:description' content={siteDesc}/>
-      <meta property='og:image' content={`${siteUrl}${image}`}/>
+      <meta property='og:image' content={`${siteUrl}${defaultImage}`}/>
       <meta property='og:image:with' content='400'/>
       <meta property='og:height' content='300'/>
 
@@ -46,7 +46,7 @@ const SEO = ({ title, description }) => {
       <meta name="twitter:creator" content={twitterUsername} />
       <meta name="twitter:title" content={siteTitle} />
       <meta name="twitter:description" content={description} />
-      <meta name="twitter:image" content={`${siteUrl}${image}`} />
+      <meta name="twitter:image" content={`${siteUrl}${defaultImage}`} />
     </Helmet>
   )
 }
