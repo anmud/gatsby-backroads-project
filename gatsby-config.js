@@ -6,9 +6,9 @@ module.exports = {
     title: "BackRoads",
     description:
       "Explore awesome worldwide tours & discover what makes each of them unique. Forget your daily routine & say yes to adventure",
-    author: "@anamo",
+    author: "@anmud",
     twitterUsername: "@anmud_mo",
-    image: "defaultBcg.jpeg",
+    image: "/static/defaultBcg.jpeg",
     siteUrl: "https://nostalgic-stonebraker-aeaf96.netlify.com",
   },
   plugins: [
